@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundbar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	
-    <h1>Sound Player</h1>
-    <div id="buttons"></div>
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <section id="buttons">
+    <button class="btn" data-sound="applause">applause</button>
+    <button class="btn" data-sound="boo">boo</button>
+    <button class="btn" data-sound="gasp">gasp</button>
+    <button class="btn" data-sound="tada">tada</button>
+    <button class="btn" data-sound="victory">victory</button>
+    <button class="btn" data-sound="wrong">wrong</button>
+    <button class="stop">stop</button>
+  </section>
+
+  <!-- REQUIRED FOR TEST CASES -->
+  <audio id="applause" src="./sounds/applause.mp3"></audio>
+  <audio id="boo" src="./sounds/boo.mp3"></audio>
+  <audio id="gasp" src="./sounds/gasp.mp3"></audio>
+  <audio id="tada" src="./sounds/tada.mp3"></audio>
+  <audio id="victory" src="./sounds/victory.mp3"></audio>
+  <audio id="wrong" src="./sounds/wrong.mp3"></audio>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
